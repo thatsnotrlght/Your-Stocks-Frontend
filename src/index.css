@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.sub-portfolio-card {
+    /* Enables the hand icon when hovering */
+    cursor: pointer;
+    /* Ensures the expansion is smooth, not instant */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .sub-portfolio-card:hover {
+    /* Scales the card up by 3% */
+    transform: scale(1.03);
+    /* Adds a slight, elegant glow using a custom purple shadow */
+    box-shadow: 0 0 15px rgba(164, 120, 255, 0.4); 
+  }
